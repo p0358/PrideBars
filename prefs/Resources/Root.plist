@@ -51,6 +51,8 @@
 			<string>PSGroupCell</string>
 			<key>label</key>
 			<string>Carrier colors configuration</string>
+			<key>footerText</key>
+			<string>When "Tint inactive bars too" toggle is enabled, inactive bars, instead of remaining gray, will also be colored with selected colors (but with 15% alpha, so they will still be dimmed). This may improve the looks on worse signal levels, but will on the other hand decrease the actual readability of the signal level, so it's disabled by default.</string>
 		</dict>
 		<dict>
 			<key>PostNotification</key>
@@ -252,6 +254,20 @@
 				<integer>14</integer>
 			</array>
 		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>net.p0358.pridebars.prefschanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>net.p0358.pridebars</string>
+			<key>key</key>
+			<string>tintInactiveCarrier</string>
+			<key>label</key>
+			<string>Tint inactive bars too</string>
+		</dict>
 
 
 
@@ -412,6 +428,20 @@
 				<integer>13</integer>
 				<integer>14</integer>
 			</array>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>net.p0358.pridebars.prefschanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>net.p0358.pridebars</string>
+			<key>key</key>
+			<string>tintInactiveWifi</string>
+			<key>label</key>
+			<string>Tint inactive bars too</string>
 		</dict>
 
 
